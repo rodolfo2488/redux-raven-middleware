@@ -8,7 +8,6 @@ import sinon from 'sinon';
 // is totally necessary.
 global.document = _jsdom.jsdom('<html><body></body></html>');
 global.window = document.parentWindow;
-global.navigator = window.navigator;
 const jsdom = mochaJsdom.bind(this, {skipWindowCheck: true});
 
 

@@ -22,7 +22,6 @@ var _sinon2 = _interopRequireDefault(_sinon);
 // is totally necessary.
 global.document = _jsdom3['default'].jsdom('<html><body></body></html>');
 global.window = document.parentWindow;
-global.navigator = window.navigator;
 var jsdom = _mochaJsdom2['default'].bind(undefined, { skipWindowCheck: true });
 
 var stubStore = {
